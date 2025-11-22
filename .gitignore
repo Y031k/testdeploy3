@@ -1,1 +1,5 @@
-/.DS_Store
+node_modules
+dist
+admin-ui
+static/assets
+static/email/test-emails

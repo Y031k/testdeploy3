@@ -61,7 +61,7 @@ exports.config = {
         graphiql_plugin_1.GraphiqlPlugin.init(),
         asset_server_plugin_1.AssetServerPlugin.init({
             route: 'assets',
-            assetUploadDir: path_1.default.join(__dirname, '../static/assets'),
+            assetUploadDir: process.env.ASSET_UPLOAD_DIR || path_1.default.join(__dirname, '../static/assets'),
             // For local dev, the correct value for assetUrlPrefix should
             // be guessed correctly, but for production it will usually need
             // to be set manually to match your production url.
